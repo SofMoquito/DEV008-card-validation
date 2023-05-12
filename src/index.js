@@ -78,9 +78,17 @@ document.getElementById("button").addEventListener("click", function() {
   div.id = "alerta";
   div.textContent = esValida;
 
+
+
+  const element = document.getElementById("alerta")
+
+  if (element !== null){
+    formulario.removeChild(element);
+  }
+
   formulario.appendChild(div);
 
-  console.log(valor)
+  console.log(element)
     
   const ocultar = validator.maskify(numTarjeta);
 
