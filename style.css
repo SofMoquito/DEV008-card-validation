@@ -1,0 +1,154 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #D9AFD9;
+    background-image: linear-gradient(0deg, #D9AFD9 0%, #97D9E1 100%);  
+    font-family: sans-serif;
+}
+ 
+ .contenedor{
+    width: 90%;
+    max-width: 1000px;
+    padding: 40px 20px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ }
+
+ /*Estilos generales de la tarjeta*/
+
+ .tarjeta{
+    width: 100%;
+    max-width: 550px;
+    color: #fff;
+    background: url(/img/galaxy-3608029.jpg);
+    background-size: cover;
+    padding: 30px;
+    border-radius: 15px;
+    min-height: 315px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    z-index: 1;
+ }
+
+ .logo-marca{
+    text-align: right;
+    min-height: 50px;
+ }
+
+ .logo-marca img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    max-width: 80px;
+}
+
+.chip{
+    min-height: 50px;
+}
+
+.chip img{
+    width: 100px;
+    max-width: 50px;
+    margin-bottom: 20px;
+ }
+
+.delantera .grupo .label{
+    font-size: 16px;
+    color: #e2e6ea;
+    margin-bottom: 5px;
+}
+
+.delantera .grupo .numero,
+.delantera .grupo .nombre,
+.delantera .grupo .expiracion{
+    color: #fff;
+    font-size: 22px;
+    text-transform: uppercase;
+}
+
+.delantera .flexbox{
+ display: flex;
+ justify-content: space-between;
+ margin-top: 20px;
+}
+
+/*Formulario*/
+
+.formulario-tarjeta{
+    background: #fff;
+    width: 100%;
+    max-width: 700px;
+    padding: 150px 30px 30px 30px;
+    border-radius: 10px;
+    position: relative;
+    top: -100px;
+}
+
+.formulario-tarjeta label {
+    display: block;
+    color: #7d8994;
+    margin-bottom: 5px;
+    font-size: 16px;
+}
+
+.formulario-tarjeta input,
+.formulario-tarjeta select,
+.btn-enviar {
+    border: 2px solid #ced6e0;
+    font-size: 18px;
+    height: 50px;
+    width: 100%;
+    padding: 5px 12px;
+    border-radius: 5px;
+}
+
+.formulario-tarjeta input:hover,
+.formulario-tarjeta select:hover{
+    border: 2px solid #6a5376;
+}
+
+.formulario-tarjeta input{
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.formulario-tarjeta .flexbox{
+    display: flex;
+    justify-content: space-between;
+}
+
+.formulario-tarjeta .expiracion{
+    width: 100%;
+}
+
+.formulario-tarjeta .grupo-select{
+    width: 100%;
+}
+
+.formulario-tarjeta .contenedor-btn-enviar{
+    padding: 15px 0 0 0;
+}
+
+.formulario-tarjeta .btn-enviar{
+    border: none;
+    padding: 10px;
+    font-size: 22px;
+    color: #fff;
+    background: #6a5376;
+    cursor: pointer;
+}
+
+#alerta{
+    text-align: center;
+    padding: 30px;
+    font-size: 25px;
+    font-weight: 600;
+    
+}
