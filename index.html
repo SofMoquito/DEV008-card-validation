@@ -6,43 +6,93 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <header class="header">
+      <img src="./img/logo2.png" alt="logo">
+    </header>
 
-
-    <header></header>
     <main>
-      <div class="contenedor">
-        <!--Tarjeta-->
-        <section class="tarjeta" id="tarjeta">
+      <section class="intro">
+        <div class="miniHeader">
+          <h1>¿Sabías qué?</h1>
+        </div>
 
-          <div class="delantera">
-            <div class="logo-marca">
-              <img src="img/mastercard.png">
-            </div>
-            <div class="chip">
-              <img src="img/chip-tarjeta.png">
-            </div>
+        <div class="bloque">
+        <div class="texto">
+         <ul>
+            <li>Cada día <span class="highlight">millones de perros y gatos son abandonados,</span> pasan hambre, frío, maltratos físicos, y sufren enfermedades que pueden provocarles una muerte temprana.</li>
+            <li>Se estima que tan sólo en <span class="highlight">CDMX</span> existen cerca de <span class="highlight">un millón 200 mil perros</span> en situación de calle.</li>
+            <li>México ocupa el <span class="highlight">tercer lugar en maltrato</span> animal y el <span class="highlight">primero</span> en perros callejeros.</li>
+            <li>El <span class="highlight">30% de los animales de compañía</span> en México cuentan con un hogar, mientras que el 70% de la población total, que se estima superior a los <span class="highlight">25 millones,</span> vive en situación de calle.</li>
+            <li>Los <span class="highlight">principales motivos de abandono animal</span> son: problemas de comportamiento, gastos de alimentación y de atención veterinaria, cambio de residencia, el nacimiento de un bebé o simplemente porque deja de ser un cachorro y ya no es tan tierno.</li>
+         </ul>
+         <br>
+         <p>Para <span class="highlight">evitar el abandono</span> de estos miembros de la familia y reducir la cifra de perros y gatos callejeros se recomienda:</p>
+        <ul>
+           <li>Fomentar la adopción y no comprar animales de compañía.</li>
+           <li>Esterilizar a perros y gatos, sin importar si son hembras o machos.</li>
+           <li>Vacunar y desparasitar interna y externamente a todas las mascotas.</li>
+        </ul>
+       </div>
+       <div class="imgTexto">
+        <img src="./img/abandonado.jpg" alt="perroAbandonado">
+       </div>
+       </div>
+    </section>
 
-            <div class="datos">
-               <div class="grupo" id="numero">
-                 <p class="label">Número Tarjeta</p>
-                 <p class="numero">#### #### #### ####</p>
-               </div>
-
-               <div class="flexbox">
-                <div class="grupo" id="nombre">
-                 <p class="label">Nombre Tarjeta</p>
-                 <p class="nombre">Sofía Saulés</p>
-                </div>
-                <div class="grupo" id="expiracion">
-                  <p class="label">Expiración</p>
-                  <p class="expiracion"><span class="mes">MM</span> / <span class="year">AA</span></p>
-                </div>
-              </div>
+    <section class="section1">
+         <h2>Puedes donar para:</h2>
+         <div class="boxes">
+          <div class="box">
+            <h3>Esterilización</h3>
+            <img src="./img/Esterilizacion.jpg" alt="Esterilización">
+            <div class="input-container">
+              <input type="radio" id="opcion1" name="opcion" value="opcion1">
+              <label for="opcion1">Seleccionar</label>
             </div>
           </div>
-        </section>
+          <div class="box">
+            <h3>Medicamentos</h3>
+            <img src="./img/Medicamentos.jpg" alt="Medicamentos">
+            <div class="input-container">
+              <input type="radio" id="opcion2" name="opcion" value="opcion2">
+              <label for="opcion2">Seleccionar</label>
+            </div>
+          </div>
+          <div class="box">
+            <h3>Alimentos</h3>
+            <img src="./img/Alimentos.jpg" alt="Alimentos">
+            <div class="input-container">
+              <input type="radio" id="opcion3" name="opcion" value="opcion3">
+              <label for="opcion3">Seleccionar</label>
+            </div>
+          </div>
+        </div>
+      </section>
 
-        <!--Formulario-->
+      <section class="section2">
+        <h2>Escoge un monto a donar:</h2>
+        <div class="boxes2">
+        <div class="monto">
+        <div class="input-container">
+          <input type="radio" id="opcion1" name="opcion" value="opcion1">
+          <label for="opcion3">$100.00 (cien pesos 00/100 M.N.)</label>
+        </div>
+        <div class="input-container">
+          <input type="radio" id="opcion2" name="opcion" value="opcion2">
+          <label for="opcion3">$200.00 (doscientos pesos 00/200 M.N.)</label>
+        </div>
+        <div class="input-container">
+          <input type="radio" id="opcion3" name="opcion" value="opcion3">
+          <label for="opcion3">$500.00 (quinientos pesos 00/500 M.N.)</label>
+        </div>
+        <div class="input-container">
+          <input type="radio" id="otro" name="opcion" value="otro">
+          <label for="otro" class="radio-label">Otra cantidad: </label>
+          <input type="texto" id="montoOtro" name="montoOtro" class="monto-input" placeholder="Monto">
+      </div>
+      </div>
+      
+      <div class="contenedor">
         <form id="formulario-tarjeta" class="formulario-tarjeta">
           <div class="grupo">
             <label for="inputNumero">Número Tarjeta</label>
@@ -53,33 +103,47 @@
             <input type="text" id="inputNombre" autocomplete="off">
           </div>
 
-          <div class="flexbox">
+  
             <div class="expiracion">
+              <div class="titulos">
                 <label for="selectMes">Expiración</label>
-                <div class="flexbox">
-                  <div class="grupo-select">
-                  <select name="mes" id="selectMes">
-                    <option disabled selected>Mes</option>
-                  </select>
-                </div>
-                <div class="grupo-select">
-                  <select name="year" id="selectYear">
-                    <option disabled selected>Año</option>
-                  </select>
-                </div>
+                <label for="inputCVV">CVV</label>
               </div>
+                <div class="flexbox">
+                    <div class="grupo-select">
+                        <select name="mes" id="selectMes">
+                            <option disabled selected>Mes</option>
+                        </select>
+                    </div>
+                    <div class="grupo-select">
+                        <select name="year" id="selectYear">
+                            <option disabled selected>Año</option>
+                        </select>
+                    </div>
+                    <div class="grupo-select">
+                        <input type="text" id="inputCVV" inputmode="numeric" name="cvv" maxlength="3" />
+                    </div>
+                </div>
             </div>
-          </div>
           <div class="contenedor-btn-enviar">
-          <button id="button" type="button" class="btn-enviar">Validar Tarjeta</button>
+          <button id="button" type="button" class="btn-enviar">Donar</button>
+        </div>
         </div>
 
-        
         </form>
       </div>
+    </div>
+      </section>
 
     </main>
-    <footer></footer>
+
+    <footer>
+      <div class="copyright">
+        <h3 class="bold"> © Copyright by Sofía Saulés - 2023</h3>
+        <h4 class="bold">Organización sin fines de lucro | Proyecto educativo </h4>
+      </div>
+    </footer>
+
     <script src="index.js" type="module"></script>
   </body>
 </html>

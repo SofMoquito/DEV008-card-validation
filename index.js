@@ -22,41 +22,23 @@ for(let i = yearActual; i <= yearActual + 9; i++){
   formulario.selectYear.appendChild(opcion);
 }
 
-// inputs numero, nombre, mes y año
-const numeroTarjeta = document.querySelector("#tarjeta .numero");
-const nombreTarjeta = document.querySelector("#tarjeta .nombre");
-const mesExpiracion = document.querySelector("#tarjeta .mes");
-const yearExpiracion = document.querySelector("#tarjeta .year");
-
-
 
 formulario.inputNumero.addEventListener("keyup", (e) =>{ //(e) porque el input va a recibir el evento 
   // el valor de lo que se teclea en el input
   const valorInput = e.target.value; 
   //Elimina espacios en blanco/ elimina las letras
   formulario.inputNumero.value = valorInput.replace(/\s/g, "").replace(/\D/g, "");
-  //para poner el contenido en la tarjeta
-  numeroTarjeta.textContent = valorInput;
 });
 
 formulario.inputNombre.addEventListener("keyup",(e) =>{
   const valorInput = e.target.value;
   formulario.inputNombre.value = valorInput.replace(/[0-9]/g, "");
-  nombreTarjeta.textContent = valorInput;
-
-  if(valorInput ===""){
-    nombreTarjeta.textContent = "Sofia Saules" 
-  }
 });
 
-formulario.selectMes.addEventListener("change", (e) => {
-  mesExpiracion.textContent = e.target.value;
+formulario.inputCVV.addEventListener("keyup",(e) =>{
+  const valorInput = e.target.value;
+  formulario.inputCVV.value = valorInput.replace(/\s/g, "").replace(/\D/g, "");
 });
-
-formulario.selectYear.addEventListener("change", (e) => {
-  yearExpiracion.textContent = e.target.value;
-});
-
 
 
 
@@ -64,6 +46,13 @@ formulario.selectYear.addEventListener("change", (e) => {
 
 document.getElementById("button").addEventListener("click", function() {
   const numTarjeta = document.getElementById("inputNumero").value;
+
+  if (numTarjeta.trim() === "") {
+    // Mostrar un mensaje de error
+    alert("Por favor, ingrese un número de tarjeta válido.");
+    return; // Salir de la función sin continuar con la validación
+  }
+  
   const valor = validator.isValid(numTarjeta);
   let esValida = ""
 
