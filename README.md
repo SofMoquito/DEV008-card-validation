@@ -1,15 +1,11 @@
-# Tarjeta de crédito válida
+# Donatón para animales en situación de calle
 
 ***
-Este proyecto es una aplicación web que permite a cualquier usuario 
-validar el número de una tarjeta de crédito mediante el Algoritmo de Luhn,
-el cual es un método de suma de verificación y se utiliza para validar 
-números de identificación; tales como el IMEI de los celulares, 
-tarjetas de crédito, etc. Además, se le agregó la funcionalidad 
-para ocultar todos los dígitos de una tarjeta excepto los últimos cuatro.
+Este proyecto es una página web estática maquetada con HTML5 y CSS3. Está pensada para ser una Organización sin fines de lucro enfocada en la donación de dinero para los perros en situación de calle de la CDMX, México. La intención es que se actualice poco a poco agregándole dinamismo. 
+
+De momento la única funcionalidad trabajada en JavaScript es la de validar el número de una tarjeta de crédito mediante el Algoritmo de Luhn,
+el cual es un método de suma de verificación y se utiliza para validar números de identificación; tales como el IMEI de los celulares, tarjetas de crédito, etc. Además, se le agregó la funcionalidad para ocultar todos los dígitos de una tarjeta excepto los últimos cuatro.
  
-La intención del proyecto es que esta plataforma sea utilizada 
-para cualquier sitio de compra ventas, donaciones, etcétera. 
 
 ***
 
@@ -47,14 +43,4 @@ Para la validación del proyecto se proporciona un archivo JS
 
 ## Consideraciones para el Usuario
 
-El proyectó inicialmente se pensó en validar los números de una 
-tarjeta de crédito sin un fin específico, para ello se agregó 
-una tarjeta dinámica que recibiera los datos del formulario 
-para así hacer más agradable la introducción de datos del usuario.
-
-Con el resultado obtenido, la aplicación web puede utilizarse para 
-cualquier otro proyecto en donde se necesite validar un pago, 
-ya sea una tienda de ropa, de comestibles, un sitio para donaciones
-a favor del cuidado de la Tierra o animales en situación de calle.
-
-Gracias a la versatilidad que presenta puede utilizarse para cualquier cosa. 
+Como se mencionó previamente la intención de este proyecto es ir sumando poco a poco funcionalidad a la página. De momento, con base a los objetivos de aprendizaje de este proyecto se buscó conseguir la maquetación en HTML y CSS y la funcionalidad de la tarjeta de crédito para las donaciones. Esperando en algún futuro este proyecto pueda ser una realidad y cumpla con el propósito establecido más allá de los fines académicos. 
